@@ -26,7 +26,7 @@
  * */
 
 /*思路：
- *
+ *循环遍历数组，用一个变量标记数组中值为val的标志，把删除的数字往后面的交换，相当于把移除元素往后移。
  * */
 #include "head.h"
 
@@ -34,11 +34,11 @@ class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
         //数组长度
-        int size = nums.size();
+        int len = nums.size();
         //标记找到val的下标
         int index=0;
         //遍历数组，若该值不为val,则将该值赋值给index位置的数，并且index加1
-        for(int i=0;i<size;i++)
+        for(int i=0;i<len;i++)
         {
             if(nums[i]!=val)
             {
